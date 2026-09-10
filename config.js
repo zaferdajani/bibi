@@ -24,7 +24,7 @@ window.JAIL = {
   },
 
   // Public site URL (used for share links + Open Graph).
-  siteURL: "https://jailbibi.xyz",
+  siteURL: "https://zaferdajani.github.io/bibi",
 
   // --- Copy ----------------------------------------------------
   hashtags: ["JAILBIBI", "JAIL"],
