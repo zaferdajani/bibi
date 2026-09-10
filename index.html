@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JAIL BIBI ($JAIL) — How many of us are there?</title>
+<meta name="description" content="JAIL BIBI ($JAIL) is a political-satire meme token on Solana. Not a court. Not an election. A counter for one question: should Benjamin Netanyahu face justice?">
+<meta name="theme-color" content="#05070a">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="JAIL BIBI — $JAIL">
+<meta property="og:description" content="Not a court. Not an election. Just a meme, a protest, and a number that goes up every time one more person says it out loud.">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JAIL BIBI — $JAIL">
+<meta name="twitter:description" content="How many people think Netanyahu should face justice? Let's find out.">
+<meta name="twitter:image" content="assets/og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== CELL DOOR INTRO ========== -->
+<div id="cellIntro" class="cell-intro" aria-hidden="true">
+  <div class="cell-intro__bars"></div>
+  <div class="cell-intro__word">JAIL BIBI</div>
+</div>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <img src="assets/bibi.png" alt="" class="nav__sprite">
+    <span>JAIL&nbsp;BIBI</span>
+    <b class="tick">$JAIL</b>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#count">The Count</a>
+    <a href="#charge">The Charge</a>
+    <a href="#raid">Raid Kit</a>
+    <a href="#buy">How to Buy</a>
+    <a href="#rapsheet">Rap Sheet</a>
+  </nav>
+  <a class="btn btn--go nav__buy" data-link="pumpfun" href="#" target="_blank" rel="noopener">BUY&nbsp;$JAIL</a>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+</header>
+
+<main id="top">
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="bars" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="kicker"><span class="dot"></span> POLITICAL SATIRE · SOLANA · FAIR LAUNCH</p>
+      <h1 class="hero__title">
+        <span class="line">JAIL</span>
+        <span class="line line--alt">BIBI</span>
+      </h1>
+      <p class="hero__lede">
+        A political satire meme for one simple question:<br>
+        <b>Do you think Benjamin Netanyahu should face justice and go to jail?</b>
+      </p>
+      <p class="hero__sub">
+        <b>$JAIL</b> isn't a government, a court, or an election. It's a meme, a protest,
+        and a way to make your opinion visible.
+      </p>
+      <p class="hero__hook" id="hook">How many people agree? <span>Let's find out.</span></p>
+
+      <div class="ca" id="caBox">
+        <span class="ca__label">CONTRACT</span>
+        <code class="ca__value" id="caValue">—</code>
+        <button class="ca__copy" id="caCopy" aria-label="Copy contract address">COPY</button>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn btn--go btn--lg" data-link="pumpfun" href="#" target="_blank" rel="noopener">BUY ON PUMP.FUN</a>
+        <a class="btn btn--ghost btn--lg" href="#raid">GET THE RAID KIT</a>
+      </div>
+
+      <div class="hero__socials" id="socials"></div>
+    </div>
+
+    <div class="hero__art">
+      <div class="cellblock">
+        <div class="cellblock__floor"></div>
+        <img src="assets/bibi.png" alt="Pixel-art caricature of Benjamin Netanyahu in a prison uniform, walking in handcuffs" class="walker" id="walker">
+        <div class="cellblock__shadow"></div>
+      </div>
+      <p class="cellblock__cap" id="escapeCap">INMATE #1948 · YARD TIME</p>
+    </div>
+  </div>
+  <a class="scrolldown" href="#count" aria-label="Scroll">▼</a>
+</section>
+
+<!-- ========== THE COUNT ========== -->
+<section id="count" class="section section--count">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">01</span> THE COUNT</h2>
+    <p class="lead">
+      This is the whole point. Every wallet is one more person who didn't scroll past.
+      The number is public, permanent, and nobody can quietly delete it.
+    </p>
+
+    <div class="stats" id="stats">
+      <div class="stat" data-k="holders"><span class="stat__v">—</span><span class="stat__l">HOLDERS</span></div>
+      <div class="stat" data-k="mcap"><span class="stat__v">—</span><span class="stat__l">MARKET CAP</span></div>
+      <div class="stat" data-k="vol"><span class="stat__v">—</span><span class="stat__l">24H VOLUME</span></div>
+      <div class="stat" data-k="served" hidden><span class="stat__v">—</span><span class="stat__l">TIME SERVED</span></div>
+    </div>
+
+    <p class="stats__status" id="statsStatus">Connecting to the yard…</p>
+
+    <div class="honest">
+      <h3>Read this before you quote the number</h3>
+      <ul>
+        <li><b>Wallets are not people.</b> One person can hold many wallets; holdings can be concentrated. This is a signal, not a census.</li>
+        <li><b>This is not a vote.</b> No election, no referendum, no court has anything to do with it.</li>
+        <li><b>This is not a verdict.</b> $JAIL expresses an opinion held by the people who buy it. Nothing more.</li>
+        <li><b>Buying is not evidence.</b> It's a signature on a joke that happens to be serious.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== THE CHARGE ========== -->
+<section id="charge" class="section">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">02</span> THE CHARGE</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="card__ico">⚖️</span>
+        <h3>Not a court</h3>
+        <p>We can't convict anyone. Real accountability happens in real institutions, on real evidence, with real defence. $JAIL doesn't pretend otherwise.</p>
+      </article>
+      <article class="card">
+        <span class="card__ico">🗳️</span>
+        <h3>Not an election</h3>
+        <p>No ballots, no districts, no legitimacy claim. If someone tells you a token price is a democratic mandate, they are selling you something.</p>
+      </article>
+      <article class="card card--hot">
+        <span class="card__ico">📣</span>
+        <h3>Just loud</h3>
+        <p>What it <i>is</i>: a place to put an opinion that's usually shouted into an algorithm and forgotten. Here it leaves a mark you can point at.</p>
+      </article>
+    </div>
+
+    <blockquote class="pull">
+      “Every meme is a vote nobody tallies.<br><span>This one tallies.</span>”
+    </blockquote>
+  </div>
+</section>
+
+<!-- ========== CHART ========== -->
+<section id="chart" class="section section--chart">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">03</span> THE TAPE</h2>
+    <div class="chartbox" id="chartbox">
+      <div class="chartbox__fallback" id="chartFallback">
+        <img src="assets/bibi.png" alt="" class="chartbox__sprite">
+        <h3>STILL IN HOLDING</h3>
+        <p>No liquidity pair is indexed yet — the coin is still on the bonding curve.
+           The live chart appears here automatically the moment it graduates.</p>
+        <a class="btn btn--go" data-link="pumpfun" href="#" target="_blank" rel="noopener">WATCH IT LIVE ON PUMP.FUN</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RAID KIT ========== -->
+<section id="raid" class="section section--raid">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">04</span> THE RAID KIT</h2>
+    <p class="lead">
+      A coin nobody talks about is a coin nobody finds. This is the ammo.
+      Two clicks: make it, post it.
+    </p>
+
+    <div class="raid">
+      <!-- posts -->
+      <div class="raid__panel">
+        <div class="raid__head">
+          <h3>ONE-CLICK POSTS</h3>
+          <button class="btn btn--mini" id="shuffle">🎲 SHUFFLE</button>
+        </div>
+        <div class="post" id="post"><pre id="postText">…</pre></div>
+        <div class="raid__row">
+          <a class="btn btn--go" id="postX" href="#" target="_blank" rel="noopener">POST ON X</a>
+          <button class="btn btn--ghost" id="postCopy">COPY TEXT</button>
+        </div>
+        <p class="fineprint">Tip: post the image from the generator with it. Posts with media travel further.</p>
+      </div>
+
+      <!-- meme maker -->
+      <div class="raid__panel raid__panel--wide">
+        <div class="raid__head">
+          <h3>MEME GENERATOR</h3>
+          <span class="badge" id="memeBadge">BUILD YOURS</span>
+        </div>
+
+        <div class="meme">
+          <canvas id="memeCanvas" width="1080" height="1080" aria-label="Meme preview"></canvas>
+
+          <div class="meme__ctl">
+            <label class="fld">
+              <span>TOP TEXT</span>
+              <input id="mTop" type="text" maxlength="42" value="THEY ASKED WHO ACTUALLY THINKS THAT">
+            </label>
+            <label class="fld">
+              <span>BOTTOM TEXT</span>
+              <input id="mBottom" type="text" maxlength="42" value="ALL OF US">
+            </label>
+
+            <span class="fld__lbl">SCENE</span>
+            <div class="chips" id="scenes">
+              <button class="chip is-on" data-scene="cell">CELL</button>
+              <button class="chip" data-scene="mug">MUGSHOT</button>
+              <button class="chip" data-scene="wanted">WANTED</button>
+              <button class="chip" data-scene="court">COURT</button>
+              <button class="chip" data-scene="upload">YOUR IMAGE ⬆</button>
+            </div>
+            <input type="file" id="mFile" accept="image/*" hidden>
+
+            <label class="fld fld--range">
+              <span>INMATE SIZE</span>
+              <input id="mScale" type="range" min="20" max="105" value="62">
+            </label>
+            <label class="fld fld--range">
+              <span>POSITION</span>
+              <input id="mPos" type="range" min="0" max="100" value="50">
+            </label>
+            <label class="tog">
+              <input type="checkbox" id="mFlip"> <span>FLIP</span>
+            </label>
+
+            <div class="raid__row">
+              <button class="btn btn--go" id="mDownload">DOWNLOAD PNG</button>
+              <button class="btn btn--ghost" id="mCopyImg">COPY IMAGE</button>
+            </div>
+            <p class="fineprint">Everything runs in your browser. Nothing is uploaded anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SENTENCE / ROADMAP ========== -->
+<section id="sentence" class="section">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">05</span> THE SENTENCE</h2>
+    <p class="lead">No fake partnerships. No invented utility. Four things, in order.</p>
+    <ol class="terms">
+      <li class="term">
+        <span class="term__no">01</span>
+        <h3>BOOKING</h3>
+        <p>Fair launch on pump.fun. No presale, no team allocation, no private round. The chart starts where everyone else starts.</p>
+      </li>
+      <li class="term">
+        <span class="term__no">02</span>
+        <h3>THE YARD</h3>
+        <p>Holders arrive. Raid kit goes to work. The count becomes a number worth screenshotting.</p>
+      </li>
+      <li class="term">
+        <span class="term__no">03</span>
+        <h3>ARRAIGNMENT</h3>
+        <p>Bonding curve graduates, liquidity goes live, listings and trackers pick it up. The number stops being ignorable.</p>
+      </li>
+      <li class="term">
+        <span class="term__no">04</span>
+        <h3>NO PAROLE</h3>
+        <p>The community decides what it becomes. It was never ours to steer — that's the whole joke.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== HOW TO BUY ========== -->
+<section id="buy" class="section section--buy">
+  <div class="wrap">
+    <h2 class="h2"><span class="h2__num">06</span> BOOKING PROCEDURE</h2>
+    <ol class="steps">
+      <li><b>GET A WALLET</b><span>Phantom or Solflare. Takes two minutes. Write the seed phrase on paper, never in a screenshot.</span></li>
+      <li><b>FUND IT WITH SOL</b><span>Buy SOL on any exchange and send it to your wallet address. Keep a little spare for fees.</span></li>
+      <li><b>OPEN THE COIN</b><span>Use the button below, or paste the contract address yourself. Check it character by character.</span></li>
+      <li><b>SWAP &amp; HOLD</b><span>Choose an amount you're genuinely fine losing. Then go make a meme about it.</span></li>
+    </ol>
+    <div class="buyrow">
+      <a class="btn btn--go btn--lg" data-link="pumpfun" href="#" target="_blank" rel="noopener">OPEN ON PUMP.FUN</a>
+      <button class="btn btn--ghost btn--lg" id="caCopy2">COPY CONTRACT</button>
+    </div>
+    <p class="warn">⚠️ Only ever trust the contract address shown on this page and on our official accounts. Impostor tokens are common. If an address doesn't match, it isn't us.</p>
+  </div>
+</section>
+
+<!-- ========== RAP SHEET / FAQ ========== -->
+<section id="rapsheet" class="section">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2"><span class="h2__num">07</span> RAP SHEET</h2>
+    <div class="faq">
+      <details><summary>Is this an actual poll or vote?</summary>
+        <p>No. One person can buy from many wallets, and a small number of holders can own a large share of supply. Treat the count as a visible expression of interest, not a measurement of public opinion.</p></details>
+      <details><summary>Is this legal commentary?</summary>
+        <p>No. It's satire and protest speech about a public figure and his conduct in public office. It isn't a legal finding and it isn't evidence of one.</p></details>
+      <details><summary>Is this about Jewish people or Israelis?</summary>
+        <p>No, and anyone using it that way is misusing it. This is about one head of government and accountability for state conduct. Criticism of a politician is not criticism of a people, and hate speech gets no home here.</p></details>
+      <details><summary>What's "1948" on the uniform?</summary>
+        <p>It's the inmate number in the artwork — a reference to the year the modern conflict's displacement began, which is the political point the meme is making.</p></details>
+      <details><summary>Does $JAIL have utility?</summary>
+        <p>No, and we won't pretend otherwise. There's no staking, no revenue, no product. It's a meme token. Anyone promising you yield on a meme coin is lying.</p></details>
+      <details><summary>Is there a team allocation?</summary>
+        <p>Fair launch on pump.fun — same curve, same start, for everyone. Verify supply distribution yourself on Solscan rather than taking our word for it.</p></details>
+      <details><summary>Will I make money?</summary>
+        <p>Probably not. Most meme coins go to zero, fast. Only spend what you would be comfortable setting on fire.</p></details>
+      <details><summary>How do I help?</summary>
+        <p>Make a meme in the generator, post it with the ticker, and bring one person who agrees with the sentence. That's it. That's the whole strategy.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/bibi.png" alt="" class="foot__sprite">
+    <p class="foot__big">JAIL BIBI · $JAIL</p>
+    <p class="foot__ca"><code id="caValue2">—</code></p>
+    <div class="foot__links" id="footLinks"></div>
+    <p class="foot__disc">
+      $JAIL is a political-satire meme token with no intrinsic value, no utility, no development roadmap
+      beyond the community, and no expectation of financial return. Nothing on this page is financial,
+      investment, or legal advice, and nothing here is a statement of fact about any legal proceeding
+      against any individual. Cryptocurrency is volatile and you can lose everything you put in.
+      Not affiliated with, endorsed by, or connected to pump.fun, any government, court, or any person depicted.
+      Artwork is caricature and commentary. Do your own research.
+    </p>
+    <p class="foot__c">© <span id="yr"></span> the yard. Built by nobody in particular.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
